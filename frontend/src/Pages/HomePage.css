@@ -1,0 +1,46 @@
+.background-photo {
+    background-image: url('https://source.unsplash.com/1920x1080/?mountain');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+}
+
+.input-group {
+    width: 80%;
+    /* max-width: 400px; Adjust the maximum width as needed */
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.custom-input {
+    height: 99px;
+}
+.custom-btn1{
+    width: 150px;
+    margin: 0 0 0 0;
+    height: 100px;
+}
+.css-13cymwt-control {
+    height: 100px !important;
+}
+.css-qbdosj-Input {
+    height: 90px !important;
+
+}
+.css-13cymwt-control {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    margin-top: 5px ;
+  }

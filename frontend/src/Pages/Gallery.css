@@ -1,0 +1,47 @@
+.gallery {
+  margin-top: 3rem;
+}
+
+.gallery h2 {
+  margin-bottom: 2rem;
+}
+
+.gallery .img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  position: relative;
+}
+
+.gallery .col-md-3 {
+  padding-bottom: 2rem;
+}
+
+.gallery .img-container {
+  position: relative;
+}
+
+.gallery .delete-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: red; /* Set delete icon color to red */
+  cursor: pointer;
+}
+
+.gallery .img-container:hover .delete-icon {
+  display: block; /* Show delete icon on hover */
+}
+
+.gallery .img-container:hover .img-fluid {
+  filter: brightness(0.8); /* Apply a slight black filter on hover */
+}
+
+.gallery .img-fluid:hover {
+  transform: scale(1.1);
+}

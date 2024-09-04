@@ -1,0 +1,88 @@
+/* Ensure HTML and body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-image: url('../Images/homeimg.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Add position relative */
+}
+
+/* Black filter overlay */
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 35, 35, 0.2);
+}
+
+/* Main content area */
+.login-main {
+
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Apply blur effect */
+margin-top: 250px !important;
+}
+.mains{
+    height: 250px !important;
+}
+/* Heading */
+.login-main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Input fields */
+.login-main input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on input fields */
+.login-main input:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Lighter background on hover */
+}
+
+/* Login button */
+.login-main button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on login button */
+.login-main button:hover {
+    background-color: #0056b3;
+}

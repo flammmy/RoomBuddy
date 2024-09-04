@@ -1,0 +1,43 @@
+/* ViewHotels.css */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .btn {
+    margin-top: 10px;
+  }
+  
+  .view-hotels-heading {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  /* Hover effect for card */
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .btn-primary:hover {
+    background-color: #007bff;
+  }
+  

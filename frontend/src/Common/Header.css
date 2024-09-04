@@ -1,0 +1,79 @@
+
+  .header-base {
+    background-color: rgb(53 0 0);
+    color: #fff;
+    padding: 20px 0; /* Increased padding for better spacing */
+    height: 100px; /* Increased height */
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .header-logo {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .header-menu {
+    flex: 2; /* Distribute remaining space evenly */
+    text-align: right;
+    margin-right: 20px;
+  }
+  
+  .logo {
+    height: 79px;
+    width: 220px;
+  }
+  
+  .header-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 15px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: white;
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+}
+  .custom-cc {
+    background-color: rgb(62 0 6) !important;
+  }
+  
+  .navbar-toggler-icon {
+    color: white !important;
+  }
+  
+  .header-link:hover {
+    text-decoration: underline;
+    color: #ccc; /* Lighter color on hover for better contrast */
+  }
+  
+  .custom-navbar {
+    background-color: rgb(62 0 6) !important;
+  }
+  
+  /* Add media queries for mobile responsiveness */
+  @media (max-width: 767px) {
+    .header-base {
+      padding: 10px 0;
+      height: auto;
+    }
+  
+    .header-logo {
+      flex: 1;
+      margin-left: 10px;
+    }
+  
+    .header-menu {
+      flex: 1;
+      text-align: center;
+      margin-right: 10px;
+    }
+  
+    .header-link {
+      margin-left: 0;
+    }
+  }

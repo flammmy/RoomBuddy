@@ -1,0 +1,131 @@
+/* Styles for sub-menu */
+.sub-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* display: none; */
+}
+
+.sub-menu li {
+  margin-left: 30px;
+}
+
+.sub-menu li a {
+  display: block;
+  padding: 12px 24px; /* Increased padding */
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.4s ease, transform 0.4s ease; /* Added transition for transform */
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-menu li a:last-child {
+  border-bottom: none;
+}
+
+.sub-menu li a:hover {
+  background-color: #f0f0f0;
+  transform: translateX(5px); /* Added a slight translation on hover */
+  color: black;
+}
+
+.sub-menu .activeClicked {
+  font-weight: bold;
+}
+
+/* Animation */
+.sub-menu.show {
+  display: block; /* Show the sub-menu when it has the 'show' class */
+  animation: slideDown 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Increased translateY */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styles for menu icon */
+.menu-icon {
+  margin-left: auto;
+}
+
+/* Expanded state */
+.expanded {
+  background-color: #555;
+}
+
+/* Additional styling for sidebar components */
+.sidebar-content {
+  padding: 0;
+}
+
+.sidebar-btn-wrapper {
+  margin: 20px 0;
+}
+
+.sidebar-btn {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar-btn:hover {
+  background: #444;
+}
+.icon-right {
+  margin-left: auto;
+}
+.gmeTLe .item-content {
+  display: flex;
+
+}
+.spanmenu{
+  width: 80%;
+}
+.spanicon{
+  width: 20%;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Sidebar hidden on mobile */
+/* Sidebar hidden on mobile */
+@media (max-width: 768px) {
+  .cdb-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Width of the sidebar */
+    height: 100vh;
+    transform: translateX(-100%); /* Hide sidebar by default */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .cdb-sidebar.visible {
+    transform: translateX(0); /* Show sidebar when visible */
+  }
+
+  .sidebar-toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+

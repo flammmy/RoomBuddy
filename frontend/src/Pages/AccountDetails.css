@@ -1,0 +1,33 @@
+.account-details-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account-details-form h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .account-details-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .account-details-form label {
+    font-weight: 500;
+  }
+  
+  .account-details-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .account-details-form .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* You can add more custom styles as needed */
+  
