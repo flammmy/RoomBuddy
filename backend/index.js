@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 try {
   mongoose.connect(
-    "mongodb+srv://Ashutosh:ashu999000@nightmare.rgxpwl0.mongodb.net/roombuddy"
+    "your mongo db url"
   );
  
   console.log("successfully connected");
